@@ -1,0 +1,53 @@
+{
+  "Rice": [
+    {
+      "Name": "A",
+      "Weight": 10,
+      "PricePerKg": 20.0
+    },
+    {
+      "Name": "B",
+      "Weight": 20,
+      "PricePerKg": 15.0
+    },
+    {
+      "Name": "C",
+      "Weight": 5,
+      "PricePerKg": 35.0
+    }
+  ],
+  "Wheat": [
+    {
+      "Name": "A",
+      "Weight": 5,
+      "PricePerKg": 20.0
+    },
+    {
+      "Name": "B",
+      "Weight": 15,
+      "PricePerKg": 25.0
+    },
+    {
+      "Name": "C",
+      "Weight": 20,
+      "PricePerKg": 15.0
+    }
+  ],
+  "Pulses": [
+    {
+      "Name": "A",
+      "Weight": 10,
+      "PricePerKg": 20.0
+    },
+    {
+      "Name": "B",
+      "Weight": 20,
+      "PricePerKg": 15.0
+    },
+    {
+      "Name": "C",
+      "Weight": 5,
+      "PricePerKg": 35.0
+    }
+  ]
+}
