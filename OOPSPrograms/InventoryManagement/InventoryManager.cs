@@ -229,5 +229,10 @@ namespace OOPSPrograms.InventoryManagement
                 PulsesList.Remove(deldata);
             }
         }
+        public void WriteToJsonFile(string file)
+        {
+            var json = JsonConvert.SerializeObject(inventories);
+            File.WriteAllText(file, json);
+        }
     }
 }

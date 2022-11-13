@@ -16,7 +16,7 @@ namespace OOPSPrograms
             {
                 try
                 {
-                    Console.WriteLine("Select from the below options\n1.InventoryDataManagement\n2.InventoryManagement\n3.InventoryDisplay\n4.AddInventoryData\n5.EditInventoryData\n6.DeleteInventorydata\n7.Exit");
+                    Console.WriteLine("Select from the below options\n1.InventoryDataManagement\n2.InventoryManagement\n3.InventoryDisplay\n4.AddInventoryData\n5.EditInventoryData\n6.DeleteInventorydata\n7.WritetoJsonFile\n8.Exit");
                     Console.Write("Enter your choice: ");
                     int choice = Convert.ToInt32(Console.ReadLine());
                     switch(choice)
@@ -42,6 +42,9 @@ namespace OOPSPrograms
                             inventoryManager.DeleteInventoryData();
                             break;
                         case 7:
+                            inventoryManager.WriteToJsonFile(jsonDataFilePath);
+                            break;
+                        case 8:
                             flag = false;
                             break;
                     }
