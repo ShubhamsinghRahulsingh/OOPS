@@ -16,7 +16,7 @@ namespace OOPSPrograms
             {
                 try
                 {
-                    Console.WriteLine("Select 1.InventoryDataManagement 2.InventoryManagement 3.InventoryDisplay 4.AddInventoryData 5.EditInventoryData 6.Exit");
+                    Console.WriteLine("Select from the below options\n1.InventoryDataManagement\n2.InventoryManagement\n3.InventoryDisplay\n4.AddInventoryData\n5.EditInventoryData\n6.DeleteInventorydata\n7.Exit");
                     Console.Write("Enter your choice: ");
                     int choice = Convert.ToInt32(Console.ReadLine());
                     switch(choice)
@@ -39,6 +39,9 @@ namespace OOPSPrograms
                             inventoryManager.EditInventoryData();
                             break;
                         case 6:
+                            inventoryManager.DeleteInventoryData();
+                            break;
+                        case 7:
                             flag = false;
                             break;
                     }
