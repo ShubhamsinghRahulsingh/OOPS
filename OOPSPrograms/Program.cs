@@ -1,5 +1,6 @@
 ﻿using OOPSPrograms.InventoryDataManagement;
 using OOPSPrograms.InventoryManagement;
+using OOPSPrograms.StockAccountManagement;
 using System;
 namespace OOPSPrograms
 {
@@ -7,16 +8,18 @@ namespace OOPSPrograms
     {
         static string jsonFilePath = @"D:\GitRepository\OOPS\OOPSPrograms\InventoryDataManagement\Inventory.json";
         static string jsonDataFilePath = @"D:\GitRepository\OOPS\OOPSPrograms\InventoryManagement\InventoryData.json";
+        static string stockFilePath = @"D:\GitRepository\OOPS\OOPSPrograms\StockAccountManagement\StockList.json";
         static void Main(string[] args)
         {
             InventoryManager inventoryManager = new InventoryManager();
+            StockManagement stock = new StockManagement();
             Console.WriteLine("Welcome to the OOPS Programs");
             bool flag = true;
             while(flag)
             {
                 try
                 {
-                    Console.WriteLine("Select from the below options\n1.InventoryDataManagement\n2.InventoryManagement\n3.InventoryDisplay\n4.AddInventoryData\n5.EditInventoryData\n6.DeleteInventorydata\n7.WritetoJsonFile\n8.Exit");
+                    Console.WriteLine("Select from the below options\n1.InventoryDataManagement\n2.InventoryManagement\n3.InventoryDisplay\n4.AddInventoryData\n5.EditInventoryData\n6.DeleteInventorydata\n7.WritetoJsonFile\n8.StockAccountManagement\n9.Exit");
                     Console.Write("Enter your choice: ");
                     int choice = Convert.ToInt32(Console.ReadLine());
                     switch(choice)
@@ -45,6 +48,9 @@ namespace OOPSPrograms
                             inventoryManager.WriteToJsonFile(jsonDataFilePath);
                             break;
                         case 8:
+                            stock.ReadStockFile(stockFilePath);
+                            break;
+                        case 9:
                             flag = false;
                             break;
                     }

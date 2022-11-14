@@ -1,0 +1,17 @@
+[
+  {
+    "Name": "HDFC",
+    "NumberOfShare": 10,
+    "SharePrice": 100
+  },
+  {
+    "Name": "ONGC",
+    "NumberOfShare": 100,
+    "SharePrice": 520
+  },
+  {
+    "Name": "INFOSYS",
+    "NumberOfShare": 200,
+    "SharePrice": 800
+  }
+]
