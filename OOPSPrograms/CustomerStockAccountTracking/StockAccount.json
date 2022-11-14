@@ -1,0 +1,17 @@
+[
+  {
+    "Name": "Zomato",
+    "NumberOfShares": 40,
+    "PricePerShare": 110
+  },
+  {
+    "Name": "Sail",
+    "NumberOfShares": 80,
+    "PricePerShare": 50
+  },
+  {
+    "Name": "Tata",
+    "NumberOfShares": 100,
+    "PricePerShare": 720
+  }
+]
