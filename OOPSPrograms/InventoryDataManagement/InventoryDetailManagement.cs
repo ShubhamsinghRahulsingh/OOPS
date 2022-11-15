@@ -15,7 +15,7 @@ namespace OOPSPrograms.InventoryDataManagement
             List<Inventory> inventories = JsonConvert.DeserializeObject<List<Inventory>>(jsondata); //json file data into string data
             foreach(var data in inventories)
             {
-                Console.WriteLine("Inventory Name: "+data.Name+"\n"+"Weight: "+data.Weight+"\n"+"Price Per Kg: "+data.PricePerKg+"\n"+"Total Price: "+data.Weight*data.PricePerKg);
+                Console.WriteLine("\nInventory Name: "+data.Name+"\n"+"Weight: "+data.Weight+"\n"+"Price Per Kg: "+data.PricePerKg+"\n"+"Total Price: "+data.Weight*data.PricePerKg);
             }
         }
     }

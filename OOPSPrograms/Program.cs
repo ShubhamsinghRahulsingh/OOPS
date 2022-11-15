@@ -23,7 +23,7 @@ namespace OOPSPrograms
             {
                 try
                 {
-                    Console.WriteLine("Select from the below options\n1.InventoryDataManagement\n2.InventoryManagement\n3.InventoryDisplay\n4.AddInventoryData\n5.EditInventoryData\n6.DeleteInventorydata\n7.WritetoJsonFile\n8.StockAccountManagement\n9.StockManagement\n10.Exit");
+                    Console.WriteLine("\nSelect from the below options\n1.InventoryDataManagement\n2.InventoryManagement\n3.InventoryDisplay\n4.AddInventoryData\n5.EditInventoryData\n6.DeleteInventorydata\n7.WritetoJsonFile\n8.StockAccountManagement\n9.StockManagement\n10.Exit");
                     Console.Write("Enter your choice: ");
                     int choice = Convert.ToInt32(Console.ReadLine());
                     switch(choice)
@@ -55,10 +55,10 @@ namespace OOPSPrograms
                             stock.ReadStockFile(stockFilePath);
                             break;
                         case 9:
-                            Console.WriteLine("Stocks Available:");
-                            stockAccount.ReadStockFile(stockAccountPath);
-                            Console.WriteLine("Customers Current stock status:");
-                            stockAccount.ReadStockFile(customerAccountPath);
+                            Console.WriteLine("\nCompanies Stocks Available:");
+                            stockAccount.ReadCompanyStockFile(stockAccountPath);
+                            Console.WriteLine("\nCustomers Current stocks status:");
+                            stockAccount.ReadCustomerStockFile(customerAccountPath);
                             break;
                         case 10:
                             flag = false;

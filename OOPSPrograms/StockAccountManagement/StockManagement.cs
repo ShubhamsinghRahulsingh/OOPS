@@ -15,7 +15,7 @@ namespace OOPSPrograms.StockAccountManagement
             List<Stock> stocks =JsonConvert.DeserializeObject<List<Stock>>(share);
             foreach(var data in stocks)
             {
-                Console.WriteLine("Stock Name: " + data.Name + "\n" + "Number of Shares: " + data.NumberOfShare + "\n" + "PricePerShare: " + data.SharePrice + "\n" + "Total Stock Price: " + data.NumberOfShare * data.SharePrice);
+                Console.WriteLine("\nStock Name: " + data.Name + "\n" + "Number of Shares: " + data.NumberOfShare + "\n" + "PricePerShare: " + data.SharePrice + "\n" + "Total Stock Price: " + data.NumberOfShare * data.SharePrice);
             }
         }
     }

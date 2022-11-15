@@ -57,7 +57,7 @@ namespace OOPSPrograms.InventoryManagement
         {
             foreach (var data in inventories)
             {
-                Console.WriteLine("Inventory Name: " + data.Name + "\n" + "Weight: " + data.Weight + "\n" + "Price Per Kg: " + data.PricePerKg + "\n" + "Total Price: " + data.Weight * data.PricePerKg);
+                Console.WriteLine("\nInventory Name: " + data.Name + "\n" + "Weight: " + data.Weight + "\n" + "Price Per Kg: " + data.PricePerKg + "\n" + "Total Price: " + data.Weight * data.PricePerKg);
 
             }
         }
