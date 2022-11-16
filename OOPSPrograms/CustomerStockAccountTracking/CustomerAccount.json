@@ -1,17 +1,17 @@
 [
   {
     "Name": "Amazon",
-    "NumberOfShares": 20,
+    "NumberOfshares": 20,
     "PricePerShare": 170
   },
   {
     "Name": "Sail",
-    "NumberOfShares": 10,
+    "NumberOfshares": 20,
     "PricePerShare": 50
   },
   {
     "Name": "Swiggy",
-    "NumberOfShares": 50,
+    "NumberOfshares": 50,
     "PricePerShare": 70
   }
 ]
